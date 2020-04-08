@@ -39,12 +39,12 @@ const LoginComponent = () => {
     <div className="container">
       <div>
         {isLoggedIn ? (
-          <>
+          <div>
             <h1>Welcome {username}!</h1>
             <button onClick={() => dispatch({ type: 'logout' })}>
               Log Out
             </button>
-          </>
+          </div>
         ) : (
           <form onSubmit={Submit}>
             {error && <p className="error">{error} </p>}
